@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Sansita:ital,wght@1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.css" />
+    <script src="./lib/jquery-3.4.1.js"></script>
+    <script src="./lib/owl.carousel.min.js"></script>
+    <script src="./JS/app.js"></script>
     <title>WithTravel</title>
   </head>
   <body>
@@ -44,12 +49,22 @@
           <li>방콕</li>
         </ol>
       </div>
-      <article class="popular_place">
-        <img src="img/sydney.jpg" alt="sydney" />
-        <img src="img/singapore.jpg" alt="singapore" />
-        <img src="img/korea.jpg" alt="korea" />
-        <h3>지금 가장 인기있는 여행 일정</h3>
-        <h4>easyxxu님의 일정을 만나보세요</h4>
+      <article class="owl-carousel owl-theme">
+        <h2>지금 가장 인기있는 여행 일정</h2>
+        <div class="popular_place owl-carousel owl-theme">
+          <div class="item first">
+            <h2 class="place">호주, 시드니</h2>
+            <h3 class="user_plan">easyxxu님의 일정을 만나보세요</h3>
+          </div>
+          <div class="item second">
+            <h2 class="place">싱가포르</h2>
+            <h3 class="user_plan">8967sky님의 일정을 만나보세요</h3>
+          </div>
+          <div class="item third">
+            <h2 class="place">대한민국, 서울</h2>
+            <h3 class="user_plan">Jenny님의 일정을 만나보세요</h3>
+          </div>
+        </div>
       </article>
       <article class="new_plan">
         <h3>새로운 여행 계획이 있나요?</h3>

@@ -53,12 +53,105 @@ body {
   font-family: "Sansita", sans-serif;
   font-size: 62px;
 }
-.popular_place img {
+article {
+  margin: 10%;
+}
+article h2 {
+  text-align: center;
+}
+.popular_place {
+  position: relative;
+}
+
+.popular_place .owl_prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100px;
+  outline: none;
+}
+
+.popular_place .owl-prev::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: -328px -651px;
+}
+
+.popular_place .owl-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  outline: none;
+  width: 100px;
+}
+
+.popular_place .owl-next::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: -1056px -369px;
+  background-repeat: no-repeat;
+  height: 38px;
+  width: 22px;
+  content: "";
+  margin: auto;
+}
+
+.popular_place .item {
+  padding-top: 323px;
+  height: 800px;
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+}
+
+.popular_place .item.first {
+  background: no-repeat url("./img/sydney.jpg") 0 / cover;
+}
+
+.popular_place .item.second {
+  background: no-repeat url("./img/singapore.jpg") 0 / cover;
+}
+
+.popular_place .item.third {
+  background: no-repeat url("./img/korea.jpg") 0 / cover;
+}
+
+.popular_place .item .place {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 60px;
+  font-size: 50px;
+  letter-spacing: -2.5px;
+  font-weight: normal;
+  position: relative;
+}
+.popular_place .item .place {
+  display: block;
+}
+
+.popular_place .item .user_plan {
+  display: inline-block;
+  vertical-align: top;
+  display: block;
+  margin-top: 15px;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: -1.2px;
+}
+.new_plan img {
   width: 200px;
   height: 100px;
 }
 
-.new_plan img {
-  width: 200px;
-  height: 100px;
+.hot_place ol {
+  display: none;
 }
