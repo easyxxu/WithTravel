@@ -1,6 +1,6 @@
-import Header from "./components/Header";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
+import Home from "./pages/Home";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-      <Header />
+      <Home />
     </div>
   );
 }

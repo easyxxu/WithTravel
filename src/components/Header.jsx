@@ -24,21 +24,24 @@ const Nav = styled.ul`
   margin-right: 20px;
 `;
 
-const NavLi = styled.li`
+const NavList = styled.li`
   margin: 8px 12px;
+`;
+const NavLink = styled.a`
+  font-size: 24px;
 `;
 export default function Header() {
   return (
     <Container>
       <Title href="#">WithTravel</Title>
       <nav>
-        <Nav class="nav">
-          <NavLi>
-            <a href="login.html">Login</a>
-          </NavLi>
-          <NavLi>
-            <a href="#">Join</a>
-          </NavLi>
+        <Nav>
+          <NavList>
+            <NavLink href="#">Login</NavLink>
+          </NavList>
+          <NavList>
+            <NavLink href="#">Join</NavLink>
+          </NavList>
         </Nav>
       </nav>
     </Container>
